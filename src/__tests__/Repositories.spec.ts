@@ -68,6 +68,8 @@ describe('Repositories', () => {
     await connection.query('DROP TABLE IF EXISTS users');
     await connection.query('DROP TABLE IF EXISTS games');
     await connection.query('DROP TABLE IF EXISTS migrations');
+    await connection.query('DROP TABLE IF EXISTS genres');
+    await connection.query('DROP TABLE IF EXISTS orders');
 
     await connection.runMigrations();
 
